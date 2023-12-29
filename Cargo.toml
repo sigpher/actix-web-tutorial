@@ -3,5 +3,7 @@ resolver = "2"
 members = ["s1"]
 
 [workspace.dependencies]
-actix-web = "4"
+actix-web = {version = "*",features = ["openssl"]}
 tokio = {version = "*",features = ["full"]}
+num_cpus = "*"
+openssl = {version = "*"}

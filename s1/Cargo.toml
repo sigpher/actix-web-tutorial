@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 actix-web ={ workspace=true }
 tokio = {workspace=true}
+num_cpus = {workspace=true}
+openssl = {workspace=true}

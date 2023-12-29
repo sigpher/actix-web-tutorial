@@ -1,5 +1,7 @@
 pub mod greeting;
-pub mod manual;
+pub mod app_state;
+pub mod counter;
 
 pub use greeting::hello;
-pub use manual::manual_hello;
+pub use app_state::get_state;
+pub use counter::get_counter;

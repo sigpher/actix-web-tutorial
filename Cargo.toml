@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["s1"]
+
+[workspace.dependencies]
+actix-web = "4"
+tokio = {version = "*",features = ["full"]}

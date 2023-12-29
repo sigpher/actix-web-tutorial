@@ -1,9 +1,11 @@
 [workspace]
 resolver = "2"
-members = ["s1"]
+members = ["s1","s2"]
 
 [workspace.dependencies]
 actix-web = {version = "*",features = ["openssl"]}
 tokio = {version = "*",features = ["full"]}
 num_cpus = "*"
 openssl = {version = "*"}
+serde ={version = "*",features = ["derive"]}
+serde_json = "*"

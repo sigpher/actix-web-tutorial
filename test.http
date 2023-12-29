@@ -1,5 +1,5 @@
 ###
-@url = https://127.0.0.1:8080
+@url = http://127.0.0.1:8080
 
 ###
 GET {{url}}/greeting/hello HTTP/1.1
@@ -16,3 +16,17 @@ GET {{url}}/app_state HTTP/1.1
 
 ###
 GET {{url}}/counter HTTP/1.1
+
+###
+GET {{url}}/users/001/choi HTTP/1.1
+
+
+###
+GET {{url}}/goods/001 HTTP/1.1
+
+###
+GET {{url}}/product/tools/Screwdriver HTTP/1.1
+
+###
+GET {{url}}/query
+?username=choi 

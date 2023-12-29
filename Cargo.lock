@@ -1000,6 +1000,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "s2"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "num_cpus",
+ "openssl",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "scopeguard"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

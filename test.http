@@ -1,4 +1,4 @@
-###
+### section s1
 @url = http://127.0.0.1:8080
 
 ###
@@ -17,7 +17,10 @@ GET {{url}}/app_state HTTP/1.1
 ###
 GET {{url}}/counter HTTP/1.1
 
-###
+
+
+
+### section s2
 GET {{url}}/users/001/choi HTTP/1.1
 
 
@@ -29,4 +32,28 @@ GET {{url}}/product/tools/Screwdriver HTTP/1.1
 
 ###
 GET {{url}}/query
-?username=choi 
+?username=choi
+# &age=20
+
+###
+POST {{url}}/submit HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"lora",
+    "age":22
+}
+
+###
+POST {{url}}/form_submit HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+username=lora
+&password=123456
+
+###
+POST {{url}}/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+&id=2
+&username=choi
